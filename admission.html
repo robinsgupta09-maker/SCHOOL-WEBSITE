@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Admission information for Vidya Niketan Public School - Admissions open 2025-26 for Nursery to Class X. Apply now!">
+    <title>Admission - Vidya Niketan Public School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <div class="logo-monogram">VN</div>
+                <span>Vidya Niketan Public School</span>
+            </a>
+            <div class="navbar-menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="academics.html">Academics</a>
+                <a href="facilities.html">Facilities</a>
+                <a href="faculty.html">Faculty</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="admission.html">Admission</a>
+                <a href="fee-structure.html">Fee Structure</a>
+                <a href="notice-board.html">Notice Board</a>
+                <a href="contact.html">Contact</a>
+                <a href="admission.html" class="btn-primary">Apply Now</a>
+            </div>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <section style="background: linear-gradient(135deg, var(--primary), var(--secondary)); padding: 160px 0 80px; text-align: center;">
+        <div class="container">
+            <h1 style="color: var(--white); font-size: 48px; margin-bottom: 16px;" class="fade-up">Admissions Open 2025-26</h1>
+            <p style="color: rgba(255,255,255,0.9); font-size: 20px;" class="fade-up delay-100">Secure Your Child's Future with Quality Education</p>
+        </div>
+    </section>
+
+    <section class="section-padding" id="admission-process">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <h2>Admission Process</h2>
+                <p>Simple and transparent admission procedure</p>
+            </div>
+            
+            <!-- Progress Tracker -->
+            <div class="progress-tracker fade-up">
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <div class="steps-indicator">
+                    <div class="step-indicator active" data-step="1">
+                        <div class="step-number">1</div>
+                        <div class="step-label">Enquiry</div>
+                    </div>
+                    <div class="step-indicator" data-step="2">
+                        <div class="step-number">2</div>
+                        <div class="step-label">Documents</div>
+                    </div>
+                    <div class="step-indicator" data-step="3">
+                        <div class="step-number">3</div>
+                        <div class="step-label">Interaction</div>
+                    </div>
+                    <div class="step-indicator disabled" data-step="4">
+                        <div class="step-number">4</div>
+                        <div class="step-label">Fee Payment</div>
+                    </div>
+                    <div class="step-indicator" data-step="5">
+                        <div class="step-number">5</div>
+                        <div class="step-label">Confirmation</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step Cards -->
+            <div class="admission-steps-container">
+                <!-- Step 1: Online Enquiry -->
+                <div class="step-card active" id="step1">
+                    <div class="step-card-header">
+                        <div class="step-icon">📝</div>
+                        <h3>Step 1: Online Enquiry</h3>
+                        <span class="step-status">Active</span>
+                    </div>
+                    <div class="step-card-body">
+                        <p style="color: var(--text-muted); margin-bottom: 24px;">Fill out the enquiry form below with student details to begin the admission process.</p>
+                        <form id="enquiryForm" class="admission-form">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="studentName">Student Name *</label>
+                                    <input type="text" id="studentName" name="studentName" placeholder="Enter student's full name" required>
+                                    <div class="error-message" id="studentName-error"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="fatherName">Father's Name *</label>
+                                    <input type="text" id="fatherName" name="fatherName" placeholder="Enter father's name" required>
+                                    <div class="error-message" id="fatherName-error"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="motherName">Mother's Name *</label>
+                                    <input type="text" id="motherName" name="motherName" placeholder="Enter mother's name" required>
+                                    <div class="error-message" id="motherName-error"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="dob">Date of Birth *</label>
+                                    <input type="date" id="dob" name="dob" required>
+                                    <div class="error-message" id="dob-error"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="classApplying">Class Applying For *</label>
+                                    <select id="classApplying" name="classApplying" required>
+                                        <option value="">Select Class</option>
+                                        <option value="Nursery">Nursery</option>
+                                        <option value="LKG">LKG</option>
+                                        <option value="UKG">UKG</option>
+                                        <option value="1">Class 1</option>
+                                        <option value="2">Class 2</option>
+                                        <option value="3">Class 3</option>
+                                        <option value="4">Class 4</option>
+                                        <option value="5">Class 5</option>
+                                        <option value="6">Class 6</option>
+                                        <option value="7">Class 7</option>
+                                        <option value="8">Class 8</option>
+                                        <option value="9">Class 9</option>
+                                        <option value="10">Class 10</option>
+                                    </select>
+                                    <div class="error-message" id="classApplying-error"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mobile">Mobile Number *</label>
+                                    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="10-digit mobile number" required>
+                                    <div class="error-message" id="mobile-error"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email (Optional)</label>
+                                    <input type="email" id="email" name="email" placeholder="your.email@example.com">
+                                    <div class="error-message" id="email-error"></div>
+                                </div>
+                                <div class="form-group full-width">
+                                    <label for="address">Address *</label>
+                                    <textarea id="address" name="address" placeholder="Enter your complete address" required></textarea>
+                                    <div class="error-message" id="address-error"></div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-primary btn-step">Submit Enquiry <span class="arrow">→</span></button>
+                        </form>
+                        <div class="success-message" id="enquirySuccess" style="display: none;">
+                            <div class="success-icon">✓</div>
+                            <h4>Enquiry Submitted Successfully!</h4>
+                            <p>Thank you! We have received your enquiry. You can now proceed to the next step.</p>
+                            <button class="btn-primary" onclick="goToStep(2)">Continue to Step 2 →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Document Submission -->
+                <div class="step-card locked" id="step2">
+                    <div class="step-card-header">
+                        <div class="step-icon">📋</div>
+                        <h3>Step 2: Document Submission</h3>
+                        <span class="step-status locked-status">Locked</span>
+                    </div>
+                    <div class="step-card-body">
+                        <div id="documentInstructions">
+                            <p style="color: var(--text-muted); margin-bottom: 24px;">Please prepare and submit the following required documents for verification.</p>
+                            <div class="document-list">
+                                <div class="document-item">
+                                    <input type="checkbox" id="doc1" class="doc-checkbox">
+                                    <label for="doc1">Birth Certificate (Original + Copy)</label>
+                                </div>
+                                <div class="document-item">
+                                    <input type="checkbox" id="doc2" class="doc-checkbox">
+                                    <label for="doc2">Aadhar Card of Student</label>
+                                </div>
+                                <div class="document-item">
+                                    <input type="checkbox" id="doc3" class="doc-checkbox">
+                                    <label for="doc3">Aadhar Card of Parents</label>
+                                </div>
+                                <div class="document-item">
+                                    <input type="checkbox" id="doc4" class="doc-checkbox">
+                                    <label for="doc4">Passport Size Photographs (4 copies)</label>
+                                </div>
+                                <div class="document-item">
+                                    <input type="checkbox" id="doc5" class="doc-checkbox">
+                                    <label for="doc5">Transfer Certificate (if applicable)</label>
+                                </div>
+                                <div class="document-item">
+                                    <input type="checkbox" id="doc6" class="doc-checkbox">
+                                    <label for="doc6">Previous Year Report Card (if applicable)</label>
+                                </div>
+                                <div class="document-item">
+                                    <input type="checkbox" id="doc7" class="doc-checkbox">
+                                    <label for="doc7">Caste Certificate (if applicable)</label>
+                                </div>
+                                <div class="document-item">
+                                    <input type="checkbox" id="doc8" class="doc-checkbox">
+                                    <label for="doc8">BPL Certificate (if applicable)</label>
+                                </div>
+                            </div>
+                            <div class="document-upload-section" style="margin-top: 32px;">
+                                <h4 style="margin-bottom: 16px;">Upload Documents (Optional)</h4>
+                                <div class="upload-area" id="uploadArea">
+                                    <div class="upload-icon">📤</div>
+                                    <p>Drag & drop files here or click to browse</p>
+                                    <input type="file" id="fileUpload" multiple accept=".pdf,.jpg,.jpeg,.png" style="display: none;">
+                                    <button type="button" class="btn-outline" onclick="document.getElementById('fileUpload').click()">Browse Files</button>
+                                </div>
+                                <div id="uploadedFiles" class="uploaded-files"></div>
+                            </div>
+                            <button class="btn-primary btn-step" id="submitDocuments" style="margin-top: 24px;" disabled>Mark as Submitted <span class="arrow">→</span></button>
+                        </div>
+                        <div class="success-message" id="documentSuccess" style="display: none;">
+                            <div class="success-icon">✓</div>
+                            <h4>Documents Submitted!</h4>
+                            <p>Your documents have been submitted successfully. You can now schedule your interaction.</p>
+                            <button class="btn-primary" onclick="goToStep(3)">Continue to Step 3 →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Interaction -->
+                <div class="step-card locked" id="step3">
+                    <div class="step-card-header">
+                        <div class="step-icon">👤</div>
+                        <h3>Step 3: Interaction</h3>
+                        <span class="step-status locked-status">Locked</span>
+                    </div>
+                    <div class="step-card-body">
+                        <div id="interactionScheduling">
+                            <p style="color: var(--text-muted); margin-bottom: 24px;">Schedule a date and time for the student assessment/interaction.</p>
+                            <form id="interactionForm" class="admission-form">
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label for="interactionDate">Preferred Date *</label>
+                                        <input type="date" id="interactionDate" name="interactionDate" required>
+                                        <div class="error-message" id="interactionDate-error"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="interactionTime">Preferred Time *</label>
+                                        <select id="interactionTime" name="interactionTime" required>
+                                            <option value="">Select Time Slot</option>
+                                            <option value="09:00">9:00 AM - 9:30 AM</option>
+                                            <option value="09:30">9:30 AM - 10:00 AM</option>
+                                            <option value="10:00">10:00 AM - 10:30 AM</option>
+                                            <option value="10:30">10:30 AM - 11:00 AM</option>
+                                            <option value="11:00">11:00 AM - 11:30 AM</option>
+                                            <option value="11:30">11:30 AM - 12:00 PM</option>
+                                            <option value="14:00">2:00 PM - 2:30 PM</option>
+                                            <option value="14:30">2:30 PM - 3:00 PM</option>
+                                            <option value="15:00">3:00 PM - 3:30 PM</option>
+                                        </select>
+                                        <div class="error-message" id="interactionTime-error"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="parentName">Parent/Guardian Name *</label>
+                                        <input type="text" id="parentName" name="parentName" placeholder="Enter parent/guardian name" required>
+                                        <div class="error-message" id="parentName-error"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contactPhone">Contact Phone *</label>
+                                        <input type="tel" id="contactPhone" name="contactPhone" pattern="[0-9]{10}" placeholder="10-digit contact number" required>
+                                        <div class="error-message" id="contactPhone-error"></div>
+                                    </div>
+                                    <div class="form-group full-width">
+                                        <label for="specialNotes">Special Notes (Optional)</label>
+                                        <textarea id="specialNotes" name="specialNotes" placeholder="Any special requirements or notes"></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn-primary btn-step">Book Interaction <span class="arrow">→</span></button>
+                            </form>
+                        </div>
+                        <div class="success-message" id="interactionSuccess" style="display: none;">
+                            <div class="success-icon">✓</div>
+                            <h4>Interaction Scheduled!</h4>
+                            <div class="confirmation-details">
+                                <p><strong>Date:</strong> <span id="confirmedDate"></span></p>
+                                <p><strong>Time:</strong> <span id="confirmedTime"></span></p>
+                                <p><strong>Location:</strong> Vidya Niketan Public School, Bagthala, Rewari</p>
+                            </div>
+                            <p>Please arrive 10 minutes early with original documents.</p>
+                            <button class="btn-primary" onclick="goToStep(5)">Continue to Confirmation →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4: Fee Payment (DISABLED) -->
+                <div class="step-card disabled" id="step4">
+                    <div class="step-card-header">
+                        <div class="step-icon">💰</div>
+                        <h3>Step 4: Fee Payment</h3>
+                        <span class="step-status disabled-badge">Coming Soon</span>
+                    </div>
+                    <div class="step-card-body disabled-body">
+                        <div class="disabled-overlay">
+                            <div class="lock-icon">🔒</div>
+                            <h4>This step is currently unavailable</h4>
+                            <p>Fee payment will be processed at the school office after interaction completion.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5: Confirmation -->
+                <div class="step-card locked" id="step5">
+                    <div class="step-card-header">
+                        <div class="step-icon">✅</div>
+                        <h3>Step 5: Confirmation</h3>
+                        <span class="step-status locked-status">Locked</span>
+                    </div>
+                    <div class="step-card-body">
+                        <div id="confirmationContent">
+                            <div class="confirmation-pending">
+                                <div class="pending-icon">⏳</div>
+                                <h4>Confirmation Pending</h4>
+                                <p>Complete the previous steps to receive your admission confirmation.</p>
+                            </div>
+                        </div>
+                        <div class="success-message" id="confirmationSuccess" style="display: none;">
+                            <div class="success-animation">
+                                <div class="checkmark-circle">
+                                    <div class="checkmark"></div>
+                                </div>
+                            </div>
+                            <h4 class="welcome-message">Welcome to Vidya Niketan Family! 🎉</h4>
+                            <p class="confirmation-text">Your admission process has been completed successfully.</p>
+                            <div class="next-steps">
+                                <h5>Next Steps:</h5>
+                                <ul>
+                                    <li>✓ Visit the school office for final verification</li>
+                                    <li>✓ Complete fee payment at the school counter</li>
+                                    <li>✓ Collect your admission kit and uniform details</li>
+                                    <li>✓ Attend the orientation program</li>
+                                </ul>
+                            </div>
+                            <div class="contact-info">
+                                <p><strong>Need Help?</strong></p>
+                                <p>📞 +91 9416697456 | 📧 vnmschool@gmail.com</p>
+                            </div>
+                            <button class="btn-primary" onclick="window.print()">Print Confirmation</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents and Fee Structure -->
+    <section class="section-padding" style="background-color: var(--bg-light);">
+        <div class="container">
+            <div class="grid-2">
+                <div class="fade-left">
+                    <h2 style="margin-bottom: 24px;">Documents Required</h2>
+                    <div class="card" style="padding: 32px;">
+                        <ul style="color: var(--text-muted);">
+                            <li style="margin-bottom: 12px;">✓ Birth Certificate (Original + Copy)</li>
+                            <li style="margin-bottom: 12px;">✓ Aadhar Card of Student</li>
+                            <li style="margin-bottom: 12px;">✓ Aadhar Card of Parents</li>
+                            <li style="margin-bottom: 12px;">✓ Passport Size Photographs (4 copies)</li>
+                            <li style="margin-bottom: 12px;">✓ Transfer Certificate (if applicable)</li>
+                            <li style="margin-bottom: 12px;">✓ Previous Year Report Card (if applicable)</li>
+                            <li style="margin-bottom: 12px;">✓ Caste Certificate (if applicable)</li>
+                            <li style="margin-bottom: 12px;">✓ BPL Certificate (if applicable)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fade-right">
+                    <h2 style="margin-bottom: 24px;">Fee Structure</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 20px;">View our complete and detailed fee structure for all classes.</p>
+                    <a href="fee-structure.html" class="btn-outline" style="display: inline-block;">View Complete Fee Structure →</a>
+                    <p style="color: var(--text-muted); margin-top: 20px; font-size: 14px;">* Includes annual charges, monthly fees, and bus charges for all routes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section"><h3>Vidya Niketan Public School</h3><p>Excellence in Education Since 1997</p><p style="margin-top: 12px;">HBSE Affiliated English Medium School<br>Registration No. 24943</p><p style="margin-top: 12px;">Bagthala, Rewari, Haryana</p></div>
+                <div class="footer-section"><h3>Quick Links</h3><ul><li><a href="about.html">About Us</a></li><li><a href="admission.html">Admissions</a></li><li><a href="facilities.html">Facilities</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="notice-board.html">Notice Board</a></li></ul></div>
+                <div class="footer-section"><h3>Academics</h3><ul><li><a href="academics.html">Curriculum</a></li><li><a href="faculty.html">Our Faculty</a></li><li><a href="academics.html#navodaya">Navodaya Coaching</a></li><li><a href="academics.html#secondary">Secondary Section</a></li></ul></div>
+                <div class="footer-section"><h3>Contact Us</h3><p>📞 +91 9416697456<br>+91 9466792207</p><p style="margin-top: 12px;">📧 vnmschool@gmail.com</p><p style="margin-top: 12px;">🕐 Mon–Sat: 8:00 AM – 2:30 PM</p></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2025 Vidya Niketan Public School, Bagthala, Rewari. All Rights Reserved. | HBSE Affiliated School</p></div>
+        </div>
+    </footer>
+
+    <a href="#" class="whatsapp-btn" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+    <button class="back-to-top" aria-label="Back to top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
+
+    <script src="js/main.js"></script>
+    <script>
+        // ========================================
+        // ADMISSION PROCESS INTERACTIVE FUNCTIONALITY
+        // ========================================
+        
+        let currentStep = 1;
+        const totalSteps = 5;
+        
+        // Initialize the admission process
+        document.addEventListener('DOMContentLoaded', function() {
+            updateProgressBar();
+            setMinDate();
+            setupDocumentCheckboxes();
+            setupFileUpload();
+        });
+        
+        // Set minimum date for interaction to tomorrow
+        function setMinDate() {
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            const dateStr = tomorrow.toISOString().split('T')[0];
+            document.getElementById('interactionDate').setAttribute('min', dateStr);
+        }
+        
+        // Setup document checkboxes
+        function setupDocumentCheckboxes() {
+            const checkboxes = document.querySelectorAll('.doc-checkbox');
+            const submitBtn = document.getElementById('submitDocuments');
+            
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    const checkedCount = document.querySelectorAll('.doc-checkbox:checked').length;
+                    submitBtn.disabled = checkedCount < 4; // Require at least 4 documents
+                    
+                    if (checkedCount >= 4) {
+                        submitBtn.style.opacity = '1';
+                    } else {
+                        submitBtn.style.opacity = '0.5';
+                    }
+                });
+            });
+        }
+        
+        // Setup file upload
+        function setupFileUpload() {
+            const uploadArea = document.getElementById('uploadArea');
+            const fileInput = document.getElementById('fileUpload');
+            const uploadedFiles = document.getElementById('uploadedFiles');
+            
+            if (uploadArea && fileInput) {
+                uploadArea.addEventListener('click', () => fileInput.click());
+                
+                uploadArea.addEventListener('dragover', (e) => {
+                    e.preventDefault();
+                    uploadArea.style.borderColor = 'var(--primary)';
+                    uploadArea.style.backgroundColor = 'rgba(26, 58, 107, 0.1)';
+                });
+                
+                uploadArea.addEventListener('dragleave', () => {
+                    uploadArea.style.borderColor = 'var(--border-color)';
+                    uploadArea.style.backgroundColor = 'var(--bg-light)';
+                });
+                
+                uploadArea.addEventListener('drop', (e) => {
+                    e.preventDefault();
+                    uploadArea.style.borderColor = 'var(--border-color)';
+                    uploadArea.style.backgroundColor = 'var(--bg-light)';
+                    handleFiles(e.dataTransfer.files);
+                });
+                
+                fileInput.addEventListener('change', (e) => {
+                    handleFiles(e.target.files);
+                });
+            }
+            
+            function handleFiles(files) {
+                for (let file of files) {
+                    addFileToList(file);
+                }
+            }
+            
+            function addFileToList(file) {
+                const fileDiv = document.createElement('div');
+                fileDiv.className = 'uploaded-file';
+                fileDiv.innerHTML = `
+                    <span>📄 ${file.name}</span>
+                    <span class="remove-file" onclick="this.parentElement.remove()">×</span>
+                `;
+                uploadedFiles.appendChild(fileDiv);
+            }
+        }
+        
+        // Step 1: Enquiry Form Submission
+        const enquiryForm = document.getElementById('enquiryForm');
+        if (enquiryForm) {
+            enquiryForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                clearAllErrors(this);
+                
+                let isValid = true;
+                const requiredFields = this.querySelectorAll('[required]');
+                
+                requiredFields.forEach(field => {
+                    if (!field.value.trim()) {
+                        showError(field, 'This field is required');
+                        isValid = false;
+                    }
+                });
+                
+                const mobileField = document.getElementById('mobile');
+                if (mobileField.value && !validatePhone(mobileField.value)) {
+                    showError(mobileField, 'Please enter a valid 10-digit mobile number');
+                    isValid = false;
+                }
+                
+                const emailField = document.getElementById('email');
+                if (emailField.value && !validateEmail(emailField.value)) {
+                    showError(emailField, 'Please enter a valid email address');
+                    isValid = false;
+                }
+                
+                if (isValid) {
+                    // Hide form and show success message
+                    enquiryForm.style.display = 'none';
+                    document.getElementById('enquirySuccess').style.display = 'block';
+                    
+                    // Mark step 1 as completed
+                    completeStep(1);
+                }
+            });
+        }
+        
+        // Step 2: Document Submission
+        const submitDocumentsBtn = document.getElementById('submitDocuments');
+        if (submitDocumentsBtn) {
+            submitDocumentsBtn.addEventListener('click', function() {
+                document.getElementById('documentInstructions').style.display = 'none';
+                document.getElementById('documentSuccess').style.display = 'block';
+                completeStep(2);
+            });
+        }
+        
+        // Step 3: Interaction Scheduling
+        const interactionForm = document.getElementById('interactionForm');
+        if (interactionForm) {
+            interactionForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                clearAllErrors(this);
+                
+                let isValid = true;
+                const requiredFields = this.querySelectorAll('[required]');
+                
+                requiredFields.forEach(field => {
+                    if (!field.value.trim()) {
+                        showError(field, 'This field is required');
+                        isValid = false;
+                    }
+                });
+                
+                const phoneField = document.getElementById('contactPhone');
+                if (phoneField.value && !validatePhone(phoneField.value)) {
+                    showError(phoneField, 'Please enter a valid 10-digit phone number');
+                    isValid = false;
+                }
+                
+                if (isValid) {
+                    const dateField = document.getElementById('interactionDate');
+                    const timeField = document.getElementById('interactionTime');
+                    
+                    // Format date
+                    const date = new Date(dateField.value);
+                    const formattedDate = date.toLocaleDateString('en-IN', {
+                        weekday: 'long',
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                    });
+                    
+                    // Format time
+                    const timeValue = timeField.value;
+                    const timeOption = timeField.options[timeField.selectedIndex].text;
+                    
+                    // Display confirmation
+                    document.getElementById('confirmedDate').textContent = formattedDate;
+                    document.getElementById('confirmedTime').textContent = timeOption;
+                    
+                    // Hide form and show success
+                    document.getElementById('interactionScheduling').style.display = 'none';
+                    document.getElementById('interactionSuccess').style.display = 'block';
+                    
+                    completeStep(3);
+                }
+            });
+        }
+        
+        // Navigation function
+        function goToStep(step) {
+            if (step === 4) return; // Skip disabled step
+            
+            // Hide all step cards
+            document.querySelectorAll('.step-card').forEach(card => {
+                card.classList.remove('active');
+                card.classList.add('locked');
+            });
+            
+            // Show target step
+            const targetCard = document.getElementById('step' + step);
+            if (targetCard) {
+                targetCard.classList.remove('locked');
+                targetCard.classList.add('active');
+                
+                // Scroll to the step
+                targetCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+            
+            // Update indicators
+            document.querySelectorAll('.step-indicator').forEach(indicator => {
+                const indicatorStep = parseInt(indicator.getAttribute('data-step'));
+                indicator.classList.remove('active');
+                
+                if (indicatorStep === step) {
+                    indicator.classList.add('active');
+                }
+            });
+            
+            currentStep = step;
+            updateProgressBar();
+            
+            // If going to step 5, show confirmation
+            if (step === 5) {
+                completeStep(5);
+            }
+        }
+        
+        // Complete a step
+        function completeStep(step) {
+            // Update step indicator
+            const indicators = document.querySelectorAll('.step-indicator');
+            indicators.forEach((indicator, index) => {
+                const indicatorStep = index + 1;
+                if (indicatorStep < step) {
+                    indicator.classList.remove('active');
+                    indicator.classList.add('completed');
+                } else if (indicatorStep === step) {
+                    indicator.classList.remove('locked', 'completed');
+                    indicator.classList.add('active');
+                }
+            });
+            
+            // Mark step card as completed
+            const stepCard = document.getElementById('step' + step);
+            if (stepCard) {
+                const statusBadge = stepCard.querySelector('.step-status');
+                if (statusBadge) {
+                    statusBadge.textContent = 'Completed';
+                    statusBadge.style.backgroundColor = '#27ae60';
+                }
+            }
+            
+            updateProgressBar();
+        }
+        
+        // Update progress bar
+        function updateProgressBar() {
+            const progressBar = document.getElementById('progressBar');
+            if (progressBar) {
+                const progress = ((currentStep - 1) / (totalSteps - 1)) * 100;
+                progressBar.style.width = progress + '%';
+            }
+        }
+        
+        // Helper functions from main.js (in case they're not available)
+        function showError(field, message) {
+            field.classList.add('error');
+            const errorElement = document.getElementById(field.id + '-error');
+            if (errorElement) {
+                errorElement.textContent = message;
+                errorElement.classList.add('show');
+            }
+        }
+        
+        function clearAllErrors(form) {
+            form.querySelectorAll('.error').forEach(field => {
+                field.classList.remove('error');
+            });
+            form.querySelectorAll('.error-message').forEach(msg => {
+                msg.textContent = '';
+                msg.classList.remove('show');
+            });
+        }
+        
+        function validatePhone(phone) {
+            return /^[0-9]{10}$/.test(phone);
+        }
+        
+        function validateEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+    </script>
+</body>
+</html>

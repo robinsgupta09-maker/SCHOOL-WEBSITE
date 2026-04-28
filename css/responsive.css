@@ -1,0 +1,428 @@
+/* ========================================
+   RESPONSIVE STYLES
+   ======================================== */
+
+/* Tablet - 768px */
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 48px 0;
+    }
+
+    .section-header h2 {
+        font-size: 32px;
+    }
+
+    .section-header p {
+        font-size: 16px;
+    }
+
+    /* Hero Section Responsive */
+    .hero {
+        padding: 90px 0 70px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-secondary {
+        padding: 11px 24px;
+        font-size: 14px;
+        min-width: auto;
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .stats-section {
+        padding-top: 28px;
+    }
+
+    .stats-grid {
+        gap: 20px;
+        max-width: 550px;
+    }
+
+    .school-info-card {
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        max-width: 100%;
+        margin-top: 32px;
+    }
+
+    .glance-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .glance-item {
+        padding: 28px 20px;
+    }
+
+    .glance-icon {
+        font-size: 36px;
+    }
+
+    /* Navbar */
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background-color: var(--primary);
+        flex-direction: column;
+        padding: 80px 24px 24px;
+        gap: 0;
+        transition: right 0.3s ease;
+        box-shadow: -4px 0 12px rgba(0,0,0,0.3);
+    }
+
+    .navbar-menu.active {
+        right: 0;
+    }
+
+    .navbar-menu a {
+        padding: 16px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        width: 100%;
+    }
+
+    .navbar-menu .btn-primary {
+        margin-top: 16px;
+        text-align: center;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+
+    /* Grid Layouts */
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .counter {
+        font-size: 36px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    /* School at a Glance Responsive */
+    .school-glance-section {
+        padding: 40px 0;
+        margin-top: -30px;
+    }
+
+    .school-glance-card {
+        max-width: 100%;
+    }
+
+    /* Form */
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Timeline */
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        padding-left: 60px;
+    }
+
+    .timeline-dot {
+        left: 12px;
+    }
+
+    /* Gallery */
+    .gallery-filters {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .gallery-filters button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Mobile - 480px */
+@media (max-width: 480px) {
+    .section-header h2 {
+        font-size: 28px;
+    }
+
+    .btn-primary,
+    .btn-secondary,
+    .btn-outline {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .navbar-logo {
+        font-size: 16px;
+    }
+
+    .navbar-logo span {
+        font-size: 18px;
+    }
+
+    .logo-monogram {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    /* Hero Section Mobile */
+    .hero {
+        padding: 85px 0 60px;
+    }
+
+    .hero-decorative-divider {
+        width: 50px;
+        margin: 16px auto;
+    }
+
+    .hero .badge {
+        font-size: 11px;
+        padding: 6px 12px;
+        margin-bottom: 16px;
+    }
+
+    .hero-tagline {
+        margin-bottom: 10px;
+    }
+
+    .hero-description {
+        margin-bottom: 24px;
+    }
+
+    .hero-buttons {
+        margin-bottom: 26px;
+    }
+
+    .stats-section {
+        padding-top: 24px;
+    }
+
+    .stats-grid {
+        gap: 16px;
+    }
+
+    .glance-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .glance-item {
+        padding: 24px 20px;
+    }
+
+    .glance-icon {
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+
+    .glance-item h4 {
+        font-size: 13px;
+    }
+
+    .glance-item p {
+        font-size: 16px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .whatsapp-btn {
+        width: 50px;
+        height: 50px;
+        bottom: 16px;
+        right: 16px;
+    }
+
+    .whatsapp-btn svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .back-to-top {
+        right: 76px;
+        bottom: 16px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .info-card {
+        padding: 16px;
+    }
+
+    table th,
+    table td {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+/* Tablet Landscape - 1024px */
+@media (max-width: 1024px) {
+    .hero-content {
+        max-width: 750px;
+    }
+
+    .hero-decorative-divider {
+        width: 55px;
+    }
+
+    .hero-buttons {
+        margin-bottom: 32px;
+    }
+
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-secondary {
+        padding: 12px 24px;
+        font-size: 15px;
+        min-width: 175px;
+    }
+
+    .stats-section {
+        padding-top: 30px;
+    }
+
+    .stats-grid {
+        gap: 22px;
+        max-width: 600px;
+    }
+}
+
+/* Large Screens - 1440px+ */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .hero-content {
+        max-width: 950px;
+    }
+
+    .stats-grid {
+        max-width: 750px;
+    }
+
+    .glance-grid {
+        max-width: 1000px;
+        gap: 28px;
+    }
+
+    .glance-item {
+        padding: 36px 28px;
+    }
+
+    .hero {
+        padding: 110px 0 90px;
+    }
+}
+
+/* Desktop - 1024px */
+@media (min-width: 1024px) {
+    .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+
+    .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+    }
+
+    .grid-4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .form-grid .form-group.full-width {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Fee Structure Responsive - Tablet */
+@media (max-width: 768px) {
+    .fee-table th,
+    .fee-table td {
+        padding: 14px 12px;
+        font-size: 14px;
+    }
+    
+    .fee-table thead th {
+        font-size: 13px;
+    }
+    
+    .route-name {
+        font-size: 16px;
+    }
+    
+    .price-option {
+        font-size: 20px;
+    }
+    
+    .bus-routes {
+        gap: 12px;
+    }
+    
+    .bus-route-item {
+        padding: 16px;
+    }
+}
+
+/* Fee Structure Responsive - Mobile */
+@media (max-width: 480px) {
+    .fee-table th,
+    .fee-table td {
+        padding: 12px 10px;
+        font-size: 13px;
+    }
+    
+    .fee-table thead th {
+        font-size: 12px;
+        padding: 14px 10px;
+    }
+    
+    .route-name {
+        font-size: 15px;
+    }
+    
+    .price-option {
+        font-size: 18px;
+    }
+    
+    .bus-route-item {
+        padding: 14px;
+    }
+}
