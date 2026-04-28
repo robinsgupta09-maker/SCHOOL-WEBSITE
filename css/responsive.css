@@ -8,6 +8,25 @@
         padding: 48px 0;
     }
 
+    .navbar-logo {
+        gap: 12px;
+    }
+
+    .logo-monogram {
+        width: 44px;
+        height: 44px;
+        font-size: 18px;
+    }
+
+    .logo-text-line-1 {
+        font-size: 17px;
+    }
+
+    .logo-text-line-2 {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
     .section-header h2 {
         font-size: 32px;
     }
@@ -167,6 +186,26 @@
 @media (max-width: 480px) {
     .section-header h2 {
         font-size: 28px;
+    }
+
+    .navbar-logo {
+        gap: 10px;
+    }
+
+    .logo-monogram {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .logo-text-line-1 {
+        font-size: 15px;
+        letter-spacing: 0.5px;
+    }
+
+    .logo-text-line-2 {
+        font-size: 11px;
+        letter-spacing: 0.8px;
     }
 
     .btn-primary,

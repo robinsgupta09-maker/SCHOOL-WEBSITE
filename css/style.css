@@ -212,59 +212,68 @@ ul {
 .navbar-logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
     color: var(--white);
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    font-size: 20px;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .navbar-logo:hover {
-    transform: scale(1.02);
+    transform: translateY(-2px);
 }
 
-.navbar-logo span {
-    background: linear-gradient(135deg, #c9a84c 0%, #f0d78c 25%, #ffffff 50%, #f0d78c 75%, #c9a84c 100%);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    text-shadow: 0 0 20px rgba(201, 168, 76, 0.3);
-    animation: shimmer 3s linear infinite;
-    position: relative;
-    padding-bottom: 2px;
+.navbar-logo:hover .logo-monogram {
+    box-shadow: 0 4px 16px rgba(201, 168, 76, 0.4);
+    transform: scale(1.05);
 }
 
-.navbar-logo span::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #c9a84c, transparent);
-    transition: width 0.4s ease;
-}
-
-.navbar-logo:hover span::after {
-    width: 100%;
+.navbar-logo:hover .logo-text {
+    text-shadow: 0 0 12px rgba(201, 168, 76, 0.3);
 }
 
 .logo-monogram {
-    width: 48px;
-    height: 48px;
-    background-color: var(--accent);
+    width: 52px;
+    height: 52px;
+    background: linear-gradient(135deg, var(--accent) 0%, #f0d78c 100%);
     color: var(--primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(201, 168, 76, 0.3);
+    flex-shrink: 0;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    line-height: 1.2;
+}
+
+.logo-text-line-1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.8px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.logo-text-line-2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
 }
 
 .navbar-menu {
