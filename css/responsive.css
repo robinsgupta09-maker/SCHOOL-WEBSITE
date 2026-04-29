@@ -234,12 +234,13 @@
 
     /* Hero Section Mobile */
     .hero {
-        padding: 80px 0 50px;
-        background-position: center center;
-        background-size: contain;
+        padding: 90px 0 40px;
+        background-position: center top;
+        background-size: auto 100%;
         background-repeat: no-repeat;
-        min-height: 100vh;
+        min-height: auto;
         max-height: none;
+        height: auto;
     }
 
     .hero-decorative-divider {
