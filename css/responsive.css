@@ -237,7 +237,7 @@
         min-height: 100vh;
         height: auto;
         padding: 100px 20px 60px;
-        background: url('../images/main-image.jpeg') center 10%;
+        background: url('../images/main-image.jpeg') center 0%;
         background-size: 100% auto;
         background-repeat: no-repeat;
     }
