@@ -666,7 +666,8 @@ table tbody tr:hover {
 .hero {
     position: relative;
     min-height: 100vh;
-    background: url('../images/main-image.jpeg') center/cover no-repeat;
+    max-height: 100vh;
+    background: url('../images/main-image.jpeg') center 30%/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;

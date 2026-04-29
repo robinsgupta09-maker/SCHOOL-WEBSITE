@@ -38,6 +38,8 @@
     /* Hero Section Responsive */
     .hero {
         padding: 90px 0 70px;
+        background-position: center center;
+        background-size: cover;
     }
 
     .hero-buttons {
@@ -232,6 +234,10 @@
     /* Hero Section Mobile */
     .hero {
         padding: 85px 0 60px;
+        background-position: center 30%;
+        background-size: cover;
+        min-height: 100vh;
+        max-height: 100vh;
     }
 
     .hero-decorative-divider {
